@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
 class ContactCards extends StatelessWidget {
-  String Name, Address, Phone, photo, Photo;
+  String name, address, phone, photo;
 
   ContactCards({
-    this.Name,
-    this.Address,
-    this.Phone,
-    this.Photo,
+    this.name,
+    this.address,
+    this.phone,
+    this.photo,
   });
 
   @override
@@ -15,21 +15,20 @@ class ContactCards extends StatelessWidget {
     return Container(
       width: 300.0,
       height: 150.0,
-      margin: EdgeInsets.only(top: 50.0),
       decoration: BoxDecoration(
           color: Colors.teal[200], borderRadius: BorderRadius.circular(12.0)),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           ListTile(
             leading: CircleAvatar(
               radius: 30.0,
-              backgroundImage: NetworkImage(Photo),
+              backgroundImage: NetworkImage(photo),
             ),
             title: Column(
               children: [
                 Text(
-                  Name,
+                  name,
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 Row(
@@ -39,7 +38,7 @@ class ContactCards extends StatelessWidget {
                       color: Colors.grey,
                     ),
                     Text(
-                      Address,
+                      address,
                     ),
                   ],
                 ),
@@ -50,7 +49,7 @@ class ContactCards extends StatelessWidget {
                       color: Colors.grey,
                     ),
                     Text(
-                      Phone,
+                      phone,
                     ),
                   ],
                 ),
