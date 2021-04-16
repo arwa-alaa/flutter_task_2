@@ -19,7 +19,7 @@ class ContactCards extends StatelessWidget {
       decoration: BoxDecoration(
           color: Colors.teal[200], borderRadius: BorderRadius.circular(12.0)),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           ListTile(
             leading: CircleAvatar(
