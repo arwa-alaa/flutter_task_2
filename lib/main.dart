@@ -14,26 +14,26 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.teal,
           body: Center(
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 ContactCards(
-                    Name: 'Arwa Alaa El-din',
-                    Address: 'Cairo, Egypt.',
-                    Phone: '0123456789',
-                    Photo:
+                    name: 'Arwa Alaa El-din',
+                    address: 'Cairo, Egypt.',
+                    phone: '0123456789',
+                    photo:
                         'https://data.whicdn.com/images/285584212/original.jpg'),
                 ContactCards(
-                  Name: 'Sara Mahmoud',
-                  Address: 'Giza, Egypt.',
-                  Phone: '0123456789',
-                  Photo:
+                  name: 'Sara Mahmoud',
+                  address: 'Giza, Egypt.',
+                  phone: '0123456789',
+                  photo:
                       'https://i.pinimg.com/736x/ae/36/39/ae36391400b9523d1321d9dbfa631c5b.jpg',
                 ),
                 ContactCards(
-                  Name: 'Sedra Abdelrahman',
-                  Address: 'Alexandria, Egypt.',
-                  Phone: '0123456789',
-                  Photo:
+                  name: 'Sedra Abdelrahman',
+                  address: 'Alexandria, Egypt.',
+                  phone: '0123456789',
+                  photo:
                       'https://www.kahanihindi.com/wp-content/uploads/2020/12/cartoon-dp-19.jpg',
                 ),
               ],
